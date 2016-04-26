@@ -1,0 +1,47 @@
+html {
+	color: black;
+}
+
+html, body {
+	@include box-model(100%, 100%, 0, 0);
+}
+
+.dieter {
+	@include box-model(100%, 500px, 0, 0);
+  border-top: 5px solid black;	
+	background: url(../dieter.jpg) center center no-repeat;
+	background-size: cover;
+	position: fixed;
+	z-index: -1;
+}
+
+.signOff {
+	position: fixed;
+	font-size: 12px;
+	right: 10px;
+	top: 10px;
+	a {
+		color: grey; 
+	}
+}
+
+.commandments {
+	position: relative;
+	top: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 95%;
+	min-height: 400px;
+	max-height: 600px;
+	padding: 20px 0 0 20px;
+  background: white;
+	.commandment {
+		@include box-model(500px, 9%, 0, 0);
+	}
+	.small {
+		font-size: 14px;
+		position: relative;
+		top: 2px;
+	}
+}

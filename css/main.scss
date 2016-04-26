@@ -1,0 +1,39 @@
+//Settings
+
+  @import "_normalize.scss";
+
+//Mixins
+
+@mixin box-model($width, $height, $padding, $margin){
+  width: $width;
+  height: $height;
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin position($position, $top, $left){
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+* {
+  @include box-sizing;
+}
+
+//Color Palette
+
+$one: #EAEDEC;
+$two: #BAB6B7;
+$three: #AFC4D9;
+$four: #6C7B90;
+
+//Implement Styles
+
+  @import "_base.scss";
