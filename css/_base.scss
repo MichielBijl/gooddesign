@@ -4,6 +4,7 @@ html {
 
 body {
 	border-top: 5px solid black;
+	overflow-x: hidden;
 }
 
 html, body {
@@ -105,39 +106,39 @@ html, body {
 			font-size: 22px;
 			color: #666;
 			width: 50%;
-			text-align: right;
 			margin-top: 40px; 
-			position: absolute;
-		  right: calc(25% + 10px);	
 		}
 		.image {
-			width: 25%;
+			height: 100%;
 			position: absolute;
 			right: 0;
 			top: 20%;
-			height: 60%;
 			-webkit-filter: grayscale(100%);
 			filter: grayscale(100%);
 			opacity: 0.8;
+			img {
+				height: 60%;
+				position: absolute;
+				right: 0;
+			}
 		}
 		.credit {
 			font-size: 12px;
 			font-weight: 800;
 		  position: absolute;
-			right: 20px;
-			width: 20vw;
-			bottom: 18%;
-			transform-origin: left top 0;
-			transform: rotate(-90deg);
-			-ms-transform: rotate(-90deg); /* IE 9 */
-			-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-
+			right: -15px;
+			top: 61%;
+			width: 200px;
+			transform-origin: right top 0;
+			transform: rotate(90deg);
+			-ms-transform: rotate(90deg); /* IE 9 */
+			-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
 		}
 		@include box-model(100%, 500px, 0, 0);
 		position: relative;
 	}
 }
-
+/*
 .commandments .commandment .one {
 	background: url(../products/one.jpg) center center no-repeat;
 	background-size: cover;
@@ -178,3 +179,4 @@ html, body {
 	background: url(../products/ten.jpg) center center no-repeat;
 	background-size: cover;
 }
+*/
