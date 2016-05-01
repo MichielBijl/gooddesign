@@ -6,6 +6,12 @@
     <title>Good Design.</title>
 		<link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/main.min.css">
+		<link rel="image_src" href="/dieter.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Dieter Rams, Dieter, Rams, Designer, Design, Good, Good Design, Vitsoe, Oliver Klein, Oliver, Klein, Oliver Thomas Klein, 10 principle for good design">
+		<meta name="author" content="Oliver Thomas Klein">
+		<meta name="description" content="Dieter Rams: 10 Principles For Good Design.">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script src="https://use.typekit.net/qfe2dsm.js"></script>
     <script>try{Typekit.load({ async: false });}catch(e){}</script>
   </head>
@@ -92,6 +98,23 @@
 		</div>
   </body>
 
-  <script src="js/app.js"></script>
+  <script>
+    window.onload=function(){
+    	var opacity = window.innerWidth / 1600;
+	  	var collection = document.getElementsByClassName("image");
+		  var arr = [].slice.call(collection);
+			arr.forEach(function(element){
+				element.style.opacity = opacity*opacity;
+			})
+		};
+		window.onresize=function(){
+			var opacity = window.innerWidth / 1600;
+			var collection = document.getElementsByClassName("image");
+			var arr = [].slice.call(collection);
+			arr.forEach(function(element){
+      	element.style.opacity = opacity*opacity;
+    	})
+  	};
+	</script>
 
 </html>
