@@ -12,61 +12,19 @@ html, body {
 }
 
 .dieter {
-	@include box-model(100%, 400px, 0, 0);
-  border-top: 5px solid black;	
+	@include box-model(100%, 390px, 0, 0);
+  border-top: 3px solid black;	
 	background: url(../dieter.jpg) center center no-repeat;
 	background-size: cover;
 	z-index: 1;
 	position: relative;
-	display: none;
-}
-
-.signOff {
-	position: absolute;
-	font-size: 14px;
-	right: 10px;
-	top: 10px;
-	a {
-		color: grey; 
-	}
-	z-index: 2;
-}
-
-.left-tag, .right-tag {
-	font-weight: 100;
-	font-size: 16px;
-	position: fixed;
-	z-index: 4;
-	top: 50%;
-	height: 40px;
-	width: 100px;
-	text-align: center;
-	color: black;
-}
-
-.left-tag {
-	left: 0;
-	transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg); /* IE 9 */
-	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-}
-
-.right-tag {
-	right: 0;
-	transform: rotate(90deg);
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-}
-
-.small {
-	font-size: 16px;
-	color: lightgrey;
-	font-weight: 100;
+	opacity: 0.9;
+//	display: none;
 }
 
 .good-design {
 	font-size: 80px;
-	width: 60%;
+	width: 80%;
 	margin: 60px 10%;
 	color: black;
   font-weight: 800;
@@ -88,6 +46,50 @@ html, body {
 	div:nth-child(1){
 		border-left: 1px dotted lightgrey;
 	}
+}
+
+.signOff {
+	position: absolute;
+	font-size: 14px;
+	right: 10px;
+	top: 10px;
+	a {
+		color: grey; 
+	}
+	z-index: 2;
+}
+
+.left-tag, .right-tag {
+	font-weight: 100;
+	font-size: 16px;
+	position: fixed;
+	z-index: 4;
+	top: 55%;
+	width: 100px;
+	text-align: center;
+	color: black;
+}
+
+.left-tag {
+	left: 2.5%;
+	transform-origin: left top 0;
+	transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg); /* IE 9 */
+	-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+}
+
+.right-tag {
+	right: 2.5%;
+	transform-origin: right top 0;
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+}
+
+.small {
+	font-size: 16px;
+	color: lightgrey;
+	font-weight: 100;
 }
 
 .commandments {
@@ -137,46 +139,14 @@ html, body {
 		@include box-model(100%, 500px, 0, 0);
 		position: relative;
 	}
+	@media screen and (max-width: 747px) {
+		.commandment {
+			.image, .credit {
+				display: none;
+			}
+			.passage {
+				width: 100%;
+			}
+		}
+	}
 }
-/*
-.commandments .commandment .one {
-	background: url(../products/one.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .two {
-	background: url(../products/two.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .three {
-	background: url(../products/three.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .four {
-	background: url(../products/four.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .five {
-	background: url(../products/five.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .six {
-	background: url(../products/six.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .seven {
-	background: url(../products/seven.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .eight {
-	background: url(../products/eight.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .nine {
-	background: url(../products/nine.jpg) center center no-repeat;
-	background-size: cover;
-}
-.commandments .commandment .ten {
-	background: url(../products/ten.jpg) center center no-repeat;
-	background-size: cover;
-}
-*/
