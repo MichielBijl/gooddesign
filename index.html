@@ -12,8 +12,15 @@
 		<meta name="author" content="Oliver Thomas Klein">
 		<meta name="description" content="Dieter Rams: 10 Principles For Good Design.">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="https://use.typekit.net/qfe2dsm.js"></script>
-    <script>try{Typekit.load({ async: false });}catch(e){}</script>
+    <script>
+      var kit = 'qfe2dsm';
+      if( window.innerWidth < 800 ) {
+        document.write('\x3Cscript src="//use.typekit.net/'+ kit +'.js" onload="try{Typekit.load();}catch(e){}" async>\x3C/script>');
+      } else {
+        document.write('\x3Cscript src="//use.typekit.net/'+ kit +'.js">\x3C/script>');
+        document.write('\x3Cscript>try{Typekit.load();}catch(e){}\x3C/script>');
+      };
+    </script>
   </head>
 
   <body>
