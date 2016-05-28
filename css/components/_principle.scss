@@ -22,6 +22,7 @@
     text-align: right;
     position: absolute;
     right: 39%;
+    z-index: 5;
 
     @media screen and (max-width: 955px) {
       width: 100%;
