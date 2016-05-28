@@ -1,39 +1,26 @@
-//Settings
+ /*
+  * Using ITCSS Methodology & BEM Naming Convention
+  */
 
-  @import "_normalize.scss";
+//settings
 
-//Mixins
+//tools
+@import "tools/_box-model.scss";
 
-@mixin box-model($width, $height, $padding, $margin){
-  width: $width;
-  height: $height;
-  padding: $padding;
-  margin: $margin;
-}
+//generic
+@import "generic/_normalize.scss";
+@import "generic/_box-sizing.scss";
 
-@mixin position($position, $top, $left){
-  position: $position;
-  top: $top;
-  left: $left;
-}
+//elements
+@import "elements/_html.scss";
+@import "elements/_body.scss";
+@import "elements/_anchor.scss";
 
-@mixin box-sizing {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
+//components
+@import "components/_header.scss";
+@import "components/_page-title.scss";
+@import "components/_stamp.scss";
+@import "components/_principle.scss";
+@import "components/_grid.scss";
 
-* {
-  @include box-sizing;
-}
-
-//Color Palette
-
-$one: #EAEDEC;
-$two: #BAB6B7;
-$three: #AFC4D9;
-$four: #6C7B90;
-
-//Implement Styles
-
-  @import "_base.scss";
+//trumps

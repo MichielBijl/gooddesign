@@ -1,0 +1,64 @@
+.principle {
+  @include box-model(80%, 500px, 10px, 0 auto);
+  border-top: 4px solid black;
+  position: relative;
+
+  &__title {
+    font-size: 44px;
+
+    @media screen and (max-width: 955px) {
+      font-size: 36px;
+    }
+
+    &--right {
+      float: right;
+    }
+  }
+
+  &__passage {
+    font-size: 22px;
+    width: 50%;
+    margin-top: 65px;
+    text-align: right;
+    position: absolute;
+    right: 39%;
+
+    @media screen and (max-width: 955px) {
+      width: 100%;
+      position: static;
+      text-align: left;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    position: absolute;
+    right: 12.5%;
+    top: 25%;
+    opacity: 0.6;
+
+    @media screen and (max-width: 955px) {
+      display: none;
+    }
+
+    img {
+      height: 288px;
+    }
+  }
+
+  &__credit {
+    font-size: 12px;
+    font-weight: 800;
+    position: absolute;
+    right: 10%;
+    bottom: 18%;
+    transform-origin: right top 0;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    @media screen and (max-width: 955px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+	@include box-model(100%, 50%, 6px, 0);
+	background: url(../dieter.jpg) center center no-repeat;
+	background-size: cover;
+	text-align: right;
+	font-size: 14px;
+  color: black;
+  @media (max-width: 550px){
+    font-size: 12px;
+  }
+}

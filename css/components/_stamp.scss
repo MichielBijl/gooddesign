@@ -1,0 +1,28 @@
+.stamp {
+	position: fixed;
+	top: calc(50% + 50px);
+	width: 100px;
+	font-weight: 100;
+	font-size: 16px;
+	text-align: center;
+	color: black;
+	@media screen and (max-width: 550px) {
+		display: none;
+	}
+	
+	&--left {
+		left: 2.5%;
+		transform-origin: left top 0;
+		transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+	}
+
+	&--right {
+		right: 2.5%;
+		transform-origin: right top 0;
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+}

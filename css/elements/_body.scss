@@ -1,0 +1,4 @@
+body {
+	border-top: 8px solid black;
+	@include box-model(100%, 100%, 0, 0 auto);
+}

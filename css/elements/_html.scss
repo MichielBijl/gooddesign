@@ -1,0 +1,4 @@
+html {
+	color: black;
+	@include box-model(100%, 100%, 0, 0);
+}

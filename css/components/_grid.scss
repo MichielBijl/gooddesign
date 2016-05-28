@@ -1,0 +1,23 @@
+.grid {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	&__line {
+		width: 10%;
+		height: 100%;
+		float: left;
+		border-right: 1px dotted #eee;
+		&:nth-child(1) {
+			border-left: 1px dotted #eee;
+		}
+		@media screen and (max-width: 550px) {
+			&:nth-child(2n) {
+				border: none;
+			}
+		}
+	}
+}
